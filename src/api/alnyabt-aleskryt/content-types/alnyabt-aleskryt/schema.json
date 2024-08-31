@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alnyabt_aleskryts",
+  "info": {
+    "singularName": "alnyabt-aleskryt",
+    "pluralName": "alnyabt-aleskryts",
+    "displayName": "النيابة العسكرية"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "type": "text"
+    },
+    "uploadFiles": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "downloadFile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "theCharge": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "almwzf": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::almwzf.almwzf",
+      "inversedBy": "alnyabt_aleskryt"
+    }
+  }
+}

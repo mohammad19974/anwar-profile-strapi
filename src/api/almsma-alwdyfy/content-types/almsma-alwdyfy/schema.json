@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "almsma_alwdyfies",
+  "info": {
+    "singularName": "almsma-alwdyfy",
+    "pluralName": "almsma-alwdyfies",
+    "displayName": "المسمى الوضيفي"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "alaqsam": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alaqsam.alaqsam"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_role_alrtbh",
+  "info": {
+    "displayName": "الرتبه"
+  },
+  "options": {},
+  "attributes": {
+    "alrtb": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alrtb.alrtb"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "altwqyf_lda_alamn_aleskries",
+  "info": {
+    "singularName": "altwqyf-lda-alamn-aleskry",
+    "pluralName": "altwqyf-lda-alamn-aleskries",
+    "displayName": "التوقيف لدى الامن العسكري",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dateOfImprisonment": {
+      "type": "date",
+      "required": true
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "note": {
+      "type": "text"
+    },
+    "almwzf": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::almwzf.almwzf",
+      "inversedBy": "altwqyf_lda_alamn_aleskry"
+    }
+  }
+}

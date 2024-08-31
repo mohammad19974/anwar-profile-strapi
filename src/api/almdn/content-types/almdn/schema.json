@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "almdns",
+  "info": {
+    "singularName": "almdn",
+    "pluralName": "almdns",
+    "displayName": "المدن"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "almhafzat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::almhafzat.almhafzat"
+    }
+  }
+}

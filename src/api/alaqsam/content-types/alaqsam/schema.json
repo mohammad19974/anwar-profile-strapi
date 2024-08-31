@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alaqsams",
+  "info": {
+    "singularName": "alaqsam",
+    "pluralName": "alaqsams",
+    "displayName": "الاقسام"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

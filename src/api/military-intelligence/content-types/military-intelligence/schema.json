@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "military_intelligences",
+  "info": {
+    "singularName": "military-intelligence",
+    "pluralName": "military-intelligences",
+    "displayName": "الامن العسكري",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "downloadFile": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "uploadFile": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "note": {
+      "type": "text"
+    },
+    "almwzf": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::almwzf.almwzf",
+      "inversedBy": "military_intelligence"
+    }
+  }
+}

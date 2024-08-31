@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alrtbs",
+  "info": {
+    "singularName": "alrtb",
+    "pluralName": "alrtbs",
+    "displayName": "الرتب"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
